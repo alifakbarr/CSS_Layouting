@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display</title>
+	<style>
+		
+		.main p {
+			background-color: salmon; 
+		}
+
+		.navigasi a {
+			display: block;
+			background-color: pink;
+			width: 200px;
+			height: 200px;
+		}
+
+		.navigasi h3{
+			background-color: lightblue;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- inline	secara default tidak menambah baris baru -->
+	<!-- lebar dan tingginya elemenya sebesar konten yang ada di dalamnya -->
+	<!-- kita tidak dapat mengatur tinggi lebar dari elemen inline -->
+	<!-- margin dan padding hanya mempengaruhi elemen secara horizontal ,tidak vertikal -->
+	<!-- elemen inline b, strong, i, em, a, span, sub, sup, button, input, label,select,text area -->
+
+	<!-- inline-block -->
+	<!-- tidak ada elemen yang secara default meliki property display : inline-block -->
+	<!-- kita harus ubah secara manual propetytersebut -->
+	<!-- perilaku dasarnya sama dengan elemen inline -->
+	<!-- perbedaanya, elemen inline-block dapat diatur tinggi lebarnya -->
+
+	<!-- block -->
+	<!-- elemen html yang secara default menambahkan baris baru ketika dibuat -->
+	<!-- jika tidak diatur lebarnya,maka lebar default dari elemen block akan memengaruhi lebar dari browser/parentnya -->
+	<!-- kita dapat mengatur tinggi dan lebar dari elemen block -->
+	<!-- didalamnya elemen block, kita dapat menyimpan tag dengan elemen inline, inline-block,atau bahkan elemen block lagi -->
+	<div class="header">		
+		<h1>Welcome X A N A</h1>
+	</div>
+
+<div class="navigasi">
+	<h3>Daftar Link</h3>
+
+	<h3>Daftar Link</h3>
+
+		<a href="#">Link</a>
+	
+	
+	
+</div>
+
+
+<div class="main">
+	<h2>Judul Artikel</h2>
+	<img src="images/zombie.jpg">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="copyright">
+	
+	Copyright 2020
+</div>
+</body>
+</html>
