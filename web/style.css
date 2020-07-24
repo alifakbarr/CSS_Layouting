@@ -56,7 +56,7 @@ body{
 	color: #333;
 }
 .container {
-	width: 920px;
+	width: 960px;
 	margin: auto;
 	background-color: white;
 }
@@ -88,7 +88,7 @@ body{
 	
 }
 .hero {
-	height: 340px;
+	height: 370px;
 	background-image: url(img/ladies.jpg);
 	background-size: cover;
 	/*horizontal,vertikal*/
@@ -97,10 +97,13 @@ body{
 	border-bottom: 5px solid lightgreen;
 }
 
-.content {
+.main {
 	padding: 10px;
+	width: 600px;
+	float: left;
+	box-sizing: border-box;;
 }
-.content h2 {
+.main h2 {
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -108,22 +111,44 @@ body{
 	font-size: 13px;
 }
 
-.content .penulis a {
+.main .penulis a {
 	text-decoration: none;
 	color: salmon;
 	font-weight: bold;
 }
-.content .penulis a:hover{
+.main .penulis a:hover{
 	color: red;
 	font-weight: bold;
 }
 
-.content p {
+.main p {
 	font-size: 15px;
 	margin-bottom: 10px;
 
 }
 
+.sidebar{
+	width: 300px;
+	float: right;
+	padding: 20px;
+}
+
+.sidebar h3{
+	font-weight: bold;
+	color: #666;
+}
+.sidebar img{
+	width: 50px;
+	height: 70px;
+	float: left;
+	padding-right: 10px;
+}
+
+.sidebar p{
+	font-size: 12px;
+	line-height: 18px;
+	font-family: arial;
+}
 .footer	{
 	background-color: #333;
 	padding: 13px;
@@ -135,7 +160,32 @@ body{
 	font-size: 14px;
 }
 
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
 
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
 
 
 
