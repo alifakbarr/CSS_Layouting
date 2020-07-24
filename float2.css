@@ -1,0 +1,13 @@
+.container {
+	width: 500px;
+	border: 5px solid lightgreen;
+	margin: auto;
+	
+}
+img {
+	float: right;
+}
+.clear {
+	/*float harus diclear jika ingin dianggap ada ,dan value nya mengikuti clear*/
+	clear: right;
+}
